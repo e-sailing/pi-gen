@@ -1,0 +1,3 @@
+librtlsdr-dev libpthread-stubs0-dev rtl-ais
+gnuradio libvolk1-bin gr-iqbal qt5-default
+libfftw3-dev kalibrate-rtl

@@ -1,0 +1,17 @@
+{
+  "enabled": false,
+  "enableLogging": false,
+  "configuration": {
+    "host": "localhost",
+    "port": 8086,
+    "database": "boatdata",
+    "batchWriteInterval": 60,
+    "resolution": 1000,
+    "recordTrack": false,
+    "overrideTimeWithNow": false,
+    "storeOthers": false,
+    "blackOrWhite": "White",
+    "blackOrWhitelist": [
+    ]
+  }
+}

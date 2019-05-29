@@ -1,0 +1,51 @@
+#!/bin/bash -e
+
+#set openplotter.local
+on_chroot << EOF
+sed -i -e '$ a\' -e "10.10.10.1	openplotter.local openplotter" /etc/hosts
+EOF
+
+#start hostapd server
+on_chroot << EOF
+systemctl enable hostapd
+EOF
+
+#start vnc server
+on_chroot << EOF
+systemctl enable vncserver-x11-serviced.service
+EOF
+
+#set hostapd conf
+on_chroot << EOF
+echo 'DAEMON_CONF="/etc/hostapd/hostapd.conf"' > /etc/default/hostapd
+EOF
+
+#add cron task
+on_chroot << EOF
+echo "@reboot /bin/bash /home/pi/.openplotter/start-ap-managed-wifi.sh" > /var/spool/cron/crontabs/root
+chgrp crontab /var/spool/cron/crontabs/root
+chmod 600 /var/spool/cron/crontabs/root
+EOF
+
+#add script to install non supported wifi device drivers
+on_chroot << EOF
+wget http://www.fars-robotics.net/install-wifi -O /usr/bin/install-wifi
+chmod +x /usr/bin/install-wifi
+EOF
+
+
+#copy files
+install -m 644 files/dnsmasq.conf		"${ROOTFS_DIR}/etc/"
+install -m 644 files/dhcpcd.conf		"${ROOTFS_DIR}/etc/"
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter"
+install -m 644 -o 1000 -g 1000 files/start-ap-managed-wifi.sh		"${ROOTFS_DIR}/home/pi/.openplotter/"
+install -m 644 -o 1000 -g 1000 files/start1.sh		"${ROOTFS_DIR}/home/pi/.openplotter/"
+install -m 644 -o 1000 -g 1000 files/iptables.sh		"${ROOTFS_DIR}/home/pi/.openplotter/"
+install -m 644 -o 1000 -g 1000 files/hostapd.conf		"${ROOTFS_DIR}/etc/hostapd/"
+install -m 644 -o 1000 -g 1000 files/interfaces	"${ROOTFS_DIR}/etc/network/"
+install -m 644 -o 1000 -g 1000 files/ap		"${ROOTFS_DIR}/etc/network/interfaces.d/"
+rm -f "${ROOTFS_DIR}/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant"
+install -m 644 -o 1000 -g 1000 files/10-wpa_supplicant_wlan0		"${ROOTFS_DIR}/lib/dhcpcd/dhcpcd-hooks"
+install -m 644 -o 1000 -g 1000 files/72-wireless.rules		"${ROOTFS_DIR}/etc/udev/rules.d/"
+install -m 644 -o 1000 -g 1000 files/11-openplotter-usb0.rules		"${ROOTFS_DIR}/etc/udev/rules.d/"
+install -m 644 -o 1000 -g 1000 files/hostname_dot_local.sh		"${ROOTFS_DIR}/home/pi/"

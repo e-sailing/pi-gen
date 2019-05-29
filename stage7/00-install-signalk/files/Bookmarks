@@ -1,0 +1,75 @@
+{
+   "checksum": "723221fcf64ecd9f8eca509ba3be3f08",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13200074117836799",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13200074117837217"
+            },
+            "name": "Signal K",
+            "type": "url",
+            "url": "http://openplotter.local:3000/admin/#/dashboard"
+         }, {
+            "date_added": "13200074194580687",
+            "id": "6",
+            "meta_info": {
+               "last_visited_desktop": "13200074194581260"
+            },
+            "name": "Grafana",
+            "type": "url",
+            "url": "http://openplotter.local:3001/login"
+         }, {
+            "date_added": "13200079197538964",
+            "id": "8",
+            "meta_info": {
+               "last_visited_desktop": "13200079197540259"
+            },
+            "name": "OpenMarine",
+            "type": "url",
+            "url": "http://forum.openmarine.net/index.php"
+         }, {
+            "date_added": "13200079257163348",
+            "id": "9",
+            "meta_info": {
+               "last_visited_desktop": "13200079257163667"
+            },
+            "name": "Sailoog",
+            "type": "url",
+            "url": "http://www.sailoog.com/"
+         }, {
+            "date_added": "13200079560024123",
+            "id": "11",
+            "meta_info": {
+               "last_visited_desktop": "13200079560024908"
+            },
+            "name": "signalk.org",
+            "type": "url",
+            "url": "http://signalk.org/"
+         } ],
+         "date_added": "13200074067897102",
+         "date_modified": "13200079560024123",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13200074067897123",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13200074067897128",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
