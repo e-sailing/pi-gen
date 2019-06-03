@@ -55,3 +55,4 @@ dtparam=spi=on
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
 dtoverlay=w1-gpio
+dtoverlay=i2c-gpio,i2c_gpio_sda=2,i2c_gpio_scl=3,bus=3

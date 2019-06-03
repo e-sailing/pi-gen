@@ -4,9 +4,9 @@
 on_chroot << EOF
 cd /home/pi/.signalk
 sudo -u pi npm i --verbose signalk-to-nmea2000
+sudo -u pi npm i --verbose signalk-n2kais-to-nmea0183
 sudo -u pi npm i --verbose @signalk/signalk-node-red
 sudo -u pi npm i --verbose @mxtommy/kip
-sudo -u pi npm i --verbose @signalk/simulatorplugin
 sudo -u pi npm i --verbose signalk-derived-data
 sudo -u pi npm i --verbose signalk-to-influxdb
 EOF

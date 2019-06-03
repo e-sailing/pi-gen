@@ -1,3 +1,4 @@
 py-rtimulib2
+gpsd-clients
 python-gps python-numpy python-scipy python-ujson python-pyudev python-pil python-gevent-websocket python-opengl python-pyglet
 pypilot
