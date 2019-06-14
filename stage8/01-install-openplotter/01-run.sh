@@ -29,6 +29,7 @@ install -m 644 files/OpenPlotter.directory		"${ROOTFS_DIR}/usr/share/raspi-ui-ov
 install -m 644 -o 1000 -g 1000 files/openplotter.desktop		"${ROOTFS_DIR}/home/pi/.local/share/applications/"
 install -m 644 -o 1000 -g 1000 files/openplotter_help.desktop		"${ROOTFS_DIR}/home/pi/.local/share/applications/"
 install -m 644 -o 1000 -g 1000 files/sdr.desktop "${ROOTFS_DIR}/home/pi/.local/share/applications/"
+install -m 644 -o 1000 -g 1000 files/kplex.desktop "${ROOTFS_DIR}/home/pi/.local/share/applications/"
 install -m 644 -o 1000 -g 1000 files/signalk.desktop		"${ROOTFS_DIR}/home/pi/.local/share/applications/"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.config/pcmanfm"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.config/pcmanfm/LXDE-pi"
