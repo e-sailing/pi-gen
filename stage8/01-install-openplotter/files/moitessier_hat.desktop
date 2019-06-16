@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Moitessier HAT
+Exec=python /home/pi/.config/openplotter/tools/moitessier_hat/moitessier_hat.py
+Icon=/home/pi/.config/openplotter/static/icons/moitessier_hat.ico
+StartupNotify=true
+Categories=OpenPlotter
+Terminal=false
+Type=Application
+Version=1.0
