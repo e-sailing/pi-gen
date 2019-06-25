@@ -1,0 +1,11 @@
+# Tag name          ;  color
+Data                ; #c0c0c0
+Voice               ; #c0c0c0
+
+# Frequency ; Name                     ; Modulation          ;  Bandwidth; Tags
+   156450000; Channel 9                ; Narrow FM           ;      10000; Voice
+   156500000; Channel 10               ; Narrow FM           ;      10000; Voice
+   156800000; Channel 16               ; Narrow FM           ;      10000; Voice
+   156875000; Channel 77               ; Narrow FM           ;      10000; Voice
+   161975000; Channel 87B - AIS        ; Narrow FM           ;      10000; Data
+   162025000; Channel 88B - AIS        ; Narrow FM           ;      10000; Data

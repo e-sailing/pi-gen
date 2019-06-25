@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Kplex GUI
+Exec=python /home/pi/.config/openplotter/tools/kplex/kplex.py
+Icon=/home/pi/.config/openplotter/static/icons/kplex.ico
+StartupNotify=true
+Categories=OpenPlotter
+Terminal=false
+Type=Application
+Version=1.0

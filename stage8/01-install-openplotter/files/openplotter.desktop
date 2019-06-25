@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenPlotter
+
+Exec=openplotter
+Icon=/home/pi/.config/openplotter/static/icons/openplotter.ico
+StartupNotify=true
+Categories=OpenPlotter
+Terminal=false
+Type=Application
+Version=1.0

@@ -1,0 +1,5 @@
+nodejs
+dialog libnss-mdns avahi-utils libavahi-compat-libdnssd-dev
+fswebcam
+grafana influxdb
+canboat

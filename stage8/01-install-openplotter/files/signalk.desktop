@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Signal K
+TryExec=/usr/bin/x-www-browser
+Exec=x-www-browser http://localhost:3000
+Icon=/home/pi/.config/openplotter/static/icons/signalk.ico
+Terminal=false
+Type=Application
+Categories=OpenPlotter
+StartupNotify=true

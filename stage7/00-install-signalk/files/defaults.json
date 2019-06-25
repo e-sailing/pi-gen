@@ -1,0 +1,8 @@
+{
+  "vessels": {
+    "self": {
+      "uuid": "urn:mrn:signalk:uuid:00000000-0000-0000-0000-000000000000",
+      "name": "OpenPlotter"
+    }
+  }
+}

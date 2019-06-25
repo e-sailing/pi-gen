@@ -1,0 +1,9 @@
+{
+  "interfaces": {},
+  "ssl": false,
+  "pipedProviders": [],
+  "security": {
+    "strategy": "./tokensecurity"
+  },
+  "loggingDirectory": "/home/pi/Logs"
+}
