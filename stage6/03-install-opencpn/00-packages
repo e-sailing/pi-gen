@@ -3,7 +3,7 @@ ofc-pi oesenc-pi opencpn-plugin-s63
 opencpn-plugin-radar
 opencpn-plugin-celestial opencpn-plugin-draw opencpn-plugin-iacfleet
 opencpn-plugin-launcher opencpn-plugin-logbookkonni opencpn-plugin-objsearch opencpn-plugin-ocpndebugger
-opencpn-plugin-otcurrent opencpn-plugin-polar
+opencpn-plugin-polar
 opencpn-plugin-watchdog opencpn-plugin-weatherfax opencpn-plugin-climatology
 opencpn-plugin-weatherrouting opencpn-plugin-pypilot
 opencpn-plugin-nmeaconverter
