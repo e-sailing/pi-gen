@@ -56,11 +56,12 @@ rm -f "${ROOTFS_DIR}/usr/share/raspi-ui-overrides/applications/help.desktop"
 rm -f "${ROOTFS_DIR}/usr/share/raspi-ui-overrides/applications/raspi_resources.desktop"
 rm -f "${ROOTFS_DIR}/usr/share/raspi-ui-overrides/applications/magpi.desktop"
 
+#TODO
 #install moitessier HAT driver
-on_chroot << EOF
-cd /home/pi
-rm -f moitessier_4.19.42_armhf.deb
-wget "https://get.rooco.tech/moitessier/release/4.19.42/latest/moitessier_4.19.42_armhf.deb"
-dpkg -i moitessier_4.19.42_armhf.deb
-rm -f moitessier_4.19.42_armhf.deb
-EOF
+#on_chroot << EOF
+#cd /home/pi
+#rm -f moitessier_4.19.42_armhf.deb
+#wget "https://get.rooco.tech/moitessier/release/4.19.42/latest/moitessier_4.19.42_armhf.deb"
+#dpkg -i moitessier_4.19.42_armhf.deb
+#rm -f moitessier_4.19.42_armhf.deb
+#EOF
