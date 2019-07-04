@@ -1,0 +1,4 @@
+#USB devices
+SUBSYSTEM=="usb" ATTR{idVendor}=="1df7" ATTR{idProduct}=="2500" MODE:="0666"
+SUBSYSTEM=="usb" ATTR{idVendor}=="1df7" ATTR{idProduct}=="3010" MODE:="0666"
+SUBSYSTEM=="usb" ATTR{idVendor}=="1df7" ATTR{idProduct}=="3000" MODE:="0666"
