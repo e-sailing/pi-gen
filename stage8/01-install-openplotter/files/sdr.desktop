@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=SDR Receiver
 Exec=python /home/pi/.config/openplotter/tools/SDR_AIS/SDR_AIS.py
-Icon=/home/pi/.config/openplotter/static/icons/sdr.ico
+Icon=gqrx
 StartupNotify=true
 Categories=OpenPlotter
 Terminal=false
