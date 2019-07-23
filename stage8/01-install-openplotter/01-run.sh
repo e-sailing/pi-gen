@@ -2,7 +2,7 @@
 
 #install puthon packages
 on_chroot << EOF
-pip install pynmea2 websocket-client
+pip3 install pynmea2 websocket-client pathlib2 wxPython
 EOF
 
 #config MQTT server 
@@ -12,12 +12,12 @@ install -m 644 files/mosquitto.conf		"${ROOTFS_DIR}/etc/mosquitto/conf.d/"
 on_chroot << EOF
 cd /home/pi/.config
 rm -rf openplotter
-rm -rf openplotter-2.x.x
-rm -f v2.x.x.zip
-wget "https://github.com/sailoog/openplotter/archive/v2.x.x.zip"
-unzip v2.x.x.zip
-mv openplotter-2.x.x openplotter
-rm -f v2.x.x.zip
+rm -rf openplotter-python3
+rm -f python3.zip
+wget "https://github.com/openplotter/openplotter/archive/python3.zip"
+unzip python3.zip
+mv openplotter-python3 openplotter
+rm -f python3.zip
 EOF
 chown -R 1000:1000 "${ROOTFS_DIR}/home/pi/.config/openplotter"
 chmod 775 "${ROOTFS_DIR}/home/pi/.config/openplotter/openplotter"
