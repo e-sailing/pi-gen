@@ -2,7 +2,7 @@
 
 #install puthon packages
 on_chroot << EOF
-pip3 install pynmea2 websocket-client pathlib2 wxPython
+pip3 install pynmea2 websocket-client
 EOF
 
 #config MQTT server 
