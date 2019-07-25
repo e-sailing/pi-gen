@@ -1,1 +1,2 @@
-mosquitto python-wxgtk3.0 whois python-requests python-w1thermsensor kplex
+python3-w1thermsensor python3-ujson python3-pyudev python3-wxgtk4.0
+mosquitto whois python-requests kplex
