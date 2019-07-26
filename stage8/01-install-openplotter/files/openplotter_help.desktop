@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=OpenPlotter Documentation
-TryExec=/usr/bin/x-www-browser
-Exec=x-www-browser /home/pi/.config/openplotter/docs/html/index.html
-Icon=/home/pi/.config/openplotter/static/icons/openplotter_help.ico
-StartupNotify=true
-Categories=Help;
-Terminal=false
-Type=Application
