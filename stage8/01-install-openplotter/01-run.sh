@@ -1,8 +1,10 @@
 #!/bin/bash -e
 
 #install puthon packages
+#As long pypilot is on python2.x we need pip install pynmea2 for read_sensors_d.py
 on_chroot << EOF
 pip3 install pynmea2 websocket-client
+pip install pynmea2
 EOF
 
 #config MQTT server 

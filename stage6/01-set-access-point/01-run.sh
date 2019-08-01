@@ -34,14 +34,17 @@ chmod +x /usr/bin/install-wifi
 EOF
 
 #copy files
+# display for headless
+install -m 644 files/dispsetup.sh		"${ROOTFS_DIR}/usr/share/"
+
 install -m 644 files/dnsmasq.conf		"${ROOTFS_DIR}/etc/"
 install -m 644 files/dhcpcd.conf		"${ROOTFS_DIR}/etc/"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/.openplotter"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/hostapd"
-install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/network"
-install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/network/interfaces.d"
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/systemd"
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/systemd/network"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/udev"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter/Network/udev/rules.d"
 
@@ -53,10 +56,6 @@ install -m 644 -o 1000 -g 1000 files/start1.sh						"${ROOTFS_DIR}/home/pi/.open
 install -m 644 -o 1000 -g 1000 files/iptables.sh					"${ROOTFS_DIR}/home/pi/.openplotter/Network/.openplotter/"
 install -m 644 -o 1000 -g 1000 files/hostapd.conf					"${ROOTFS_DIR}/etc/hostapd/"
 install -m 644 -o 1000 -g 1000 files/hostapd.conf					"${ROOTFS_DIR}/home/pi/.openplotter/Network/hostapd/"
-install -m 644 -o 1000 -g 1000 files/interfaces						"${ROOTFS_DIR}/etc/network/"
-install -m 644 -o 1000 -g 1000 files/interfaces						"${ROOTFS_DIR}/home/pi/.openplotter/Network/network/"
-install -m 644 -o 1000 -g 1000 files/ap								"${ROOTFS_DIR}/etc/network/interfaces.d/"
-install -m 644 -o 1000 -g 1000 files/ap								"${ROOTFS_DIR}/home/pi/.openplotter/Network/network/interfaces.d/"
 rm -f "${ROOTFS_DIR}/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant"
 install -m 644 -o 1000 -g 1000 files/10-wpa_supplicant_wlan9		"${ROOTFS_DIR}/lib/dhcpcd/dhcpcd-hooks"
 install -m 644 -o 1000 -g 1000 files/72-wireless.rules				"${ROOTFS_DIR}/etc/udev/rules.d/"
