@@ -34,9 +34,6 @@ chmod +x /usr/bin/install-wifi
 EOF
 
 #copy files
-# display for headless
-install -m 644 files/dispsetup.sh		"${ROOTFS_DIR}/usr/share/"
-
 install -m 644 files/dnsmasq.conf		"${ROOTFS_DIR}/etc/"
 install -m 644 files/dhcpcd.conf		"${ROOTFS_DIR}/etc/"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.openplotter"
