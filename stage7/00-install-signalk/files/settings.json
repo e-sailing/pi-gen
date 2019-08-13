@@ -1,9 +1,23 @@
 {
-  "interfaces": {},
-  "ssl": false,
+  "enablePluginLogging": true,
+  "interfaces": {
+    "appstore": true,
+    "logfiles": true,
+    "nmea-tcp": true,
+    "plugins": true,
+    "providers": true,
+    "rest": true,
+    "tcp": true,
+    "webapps": true,
+    "ws": true
+  },
+  "loggingDirectory": "/home/pi/Logs",
+  "mdns": true,
   "pipedProviders": [],
+  "pruneContextsMinutes": 60,
   "security": {
     "strategy": "./tokensecurity"
   },
-  "loggingDirectory": "/home/pi/Logs"
+  "ssl": false,
+  "wsCompression": false
 }

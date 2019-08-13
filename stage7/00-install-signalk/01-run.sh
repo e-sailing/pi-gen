@@ -8,6 +8,7 @@ EOF
 #config sk
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.signalk"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.signalk/plugin-config-data"
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/Logs"
 install -m 644 -o 1000 -g 1000 files/.npmrc		"${ROOTFS_DIR}/home/pi/.signalk/"
 install -m 644 -o 1000 -g 1000 files/package.json		"${ROOTFS_DIR}/home/pi/.signalk/"
 install -m 644 -o 1000 -g 1000 files/settings.json		"${ROOTFS_DIR}/home/pi/.signalk/"
